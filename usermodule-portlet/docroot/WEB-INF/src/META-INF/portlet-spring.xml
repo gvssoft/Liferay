@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" default-destroy-method="destroy" default-init-method="afterPropertiesSet" xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+	<bean id="com.usermodule.service.UseractionLocalService" class="com.usermodule.service.impl.UseractionLocalServiceImpl" />
+	<bean id="com.usermodule.service.UseractionService" class="com.usermodule.service.impl.UseractionServiceImpl" />
+	<bean id="com.usermodule.service.persistence.UseractionPersistence" class="com.usermodule.service.persistence.UseractionPersistenceImpl" parent="basePersistence" />
+</beans>
