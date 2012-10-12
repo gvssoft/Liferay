@@ -14,7 +14,7 @@
 <%User u = (User)request.getAttribute(UserModuleConstants.USER); %>
 <%
 String bdays[] = new String[20];
-
+//get birthday
 String birthday = u.getBirthday().toString();
 if(birthday!=null) {	
 	SimpleDateFormat formattar = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
